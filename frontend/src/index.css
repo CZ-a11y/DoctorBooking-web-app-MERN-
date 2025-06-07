@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Ensure consistent font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  section {
+    @apply py-[75px];
+  }
+
+  /* Reset button styles for consistency */
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    @apply appearance-none;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-full w-full lg:w-[1500px] px-5 mx-auto;
+  }
+
+  .btn {
+    @apply bg-primaryColor py-4 px-9 rounded-full text-white font-semibold mt-[38px] 
+           transition-colors duration-200 
+           focus:outline-none focus:ring-2 focus:ring-primaryColor focus:ring-opacity-50;
+  }
+
+  .heading {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-[80px] leading-tight md:leading-[54px] font-bold text-headingColor;
+  }
+
+  .text__para {
+    @apply text-base sm:text-lg leading-relaxed font-normal text-textColor mt-5;
+  }
+
+  .header {
+    @apply bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px];
+  }
+
+  .hero__section {
+    @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover;
+  }
+}
+
+/* Media queries with proper syntax */
+@media only screen and (max-width: 1024px) {
+  .container {
+    @apply w-full;
+  }
+
+  section {
+    @apply py-[35px];
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    @apply text-2xl leading-9;
+  }
+
+  .text__para {
+    @apply text-base leading-7 mt-3;
+  }
+
+  .btn {
+    @apply py-3 px-7 mt-6;
+  }
+}
