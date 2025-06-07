@@ -13,7 +13,7 @@ Hi! I’m **CHOMOH ZIDANE**, the developer behind the DoctorBooking-web-app-MERN
 
 ## 🩺 Project Overview
 
-**CZ-a11y** is a MERN stack web application designed to empower patients by allowing them to book appointments with doctors from the comfort of their homes. The main goal of this project is to streamline healthcare access and make booking medical appointments simple and efficient.
+**DoctorBooking-web-app-MERN** is a MERN stack web application designed to empower patients by allowing them to book appointments with doctors from the comfort of their homes. The main goal of this project is to streamline healthcare access and make booking medical appointments simple and efficient.
 
 ## 🚀 Technologies Used
 
